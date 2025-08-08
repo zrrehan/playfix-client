@@ -1,0 +1,32 @@
+[
+    {
+        "providerName": "Yousuf Hossain",
+        "providerEmail": "yousuf@fixitbd.com",
+        "providerImage": "https://scontent.fdac198-1.fna.fbcdn.net/v/t39.30808-6/476403253_122254839608000508_6370181736547443314_n.jpg?stp=c0.169.1536.1536a_cp6_dst-jpg_s206x206_tt6&_nc_cat=110&ccb=1-7&_nc_sid=50ad20&_nc_aid=0&_nc_eui2=AeF75KXoODoXTZmwKOoPPax5ykxJKQ_jEpLKTEkpD-MSkgOBg3el8em0v81ru8b7rJpyBRZyr0WusXkiW9WacHbX&_nc_ohc=JzEhI8R9EbEQ7kNvwH5XHSN&_nc_oc=AdlUIdR_NdmjmBTYb5oi617okEKxByEJHeMBEn-ba8BgaHnMN4E6OdSL8G0Rt6OEMqA&_nc_zt=23&_nc_ht=scontent.fdac198-1.fna&_nc_gid=kjhAevaUqQ0dQppNfqccsw&oh=00_AfPNWdCeLgsk-3-9OskzmgpcVjJjGeI7dxrS0nH4Jktfuw&oe=68597399",
+        "location": "DHAKA",
+        "serviceImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7e4YPa--Yy6Alqel_wmCrPrPJ4kB8dNoIQ&s",
+        "serviceName": "PlayStation 5 HDMI Port Repair",
+        "serviceDescription": "We fix damaged or faulty HDMI ports on your PlayStation 5, ensuring your console connects properly to displays for uninterrupted gameplay and flawless video output every time.",
+        "servicePrice": "1500 BDT"
+    },
+    {
+        "providerName": "Ryan Ahammed",
+        "providerEmail": "ryan@fixitbd.com",
+        "providerImage": "https://scontent.fdac198-1.fna.fbcdn.net/v/t39.30808-1/472814089_9017467135006542_6434774131279836623_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeHpKHkHQ1x8tj1nAO4zVXv1pajifhhJajalqOJ-GElqNojOh6v3Z3doesgwMHbnDc0FDo9LIqbCXiU-bM7gDR_Q&_nc_ohc=NbEglGhV_OsQ7kNvwFBwU8U&_nc_oc=AdkaDK_686WtwAf08VAdcsi-ADE3jY7yid5LItDPbjtLGIfZpso8a74o7J9A-q4H_7U&_nc_zt=24&_nc_ht=scontent.fdac198-1.fna&_nc_gid=HtVE3-3nfopMKBeZVbUDNg&oh=00_AfPUIBegHBpGz9ZvsMrTc5CmekV03NesR_OBdcGHLdAtzw&oe=68596F82",
+        "location": "DHAKA",
+        "serviceImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7e4YPa--Yy6Alqel_wmCrPrPJ4kB8dNoIQ&s",
+        "serviceName": "PS5 Overheating Fix",
+        "serviceDescription": "Is your Xbox One overheating? We offer expert cleaning, fan repair, and thermal paste replacement to restore performance and extend your console's life under heavy use.",
+        "servicePrice": "1200 BDT"
+    },
+    {
+        "providerName": "Alamin Siloy",
+        "providerEmail": "alamin@fixitbd.com",
+        "providerImage": "https://scontent.fdac198-1.fna.fbcdn.net/v/t39.30808-1/463875861_1713821299399878_5141280412852540781_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeESa0_zG7Njk6DVjWj9hZ7tJgn9_PhcrGMmCf38-FysY3JXIxait6iKnApZ54ovo85Y2q9zUZScBY2vAXt9JG4B&_nc_ohc=6wOXFesp-xsQ7kNvwEN50i3&_nc_oc=AdlELOR9kawSdlB-QXMYEhFbOqPvVxJkvwgrpPrpCnE5LlblZ4dD2X8UwefF9cJ7U98&_nc_zt=24&_nc_ht=scontent.fdac198-1.fna&_nc_gid=8H21a08NgeMOkWpofL_oAg&oh=00_AfMWNuXXDNm1bHj66wxYrMqaHp_X-O5Qh4tcp8AWR_SWBQ&oe=68596578",
+        "location": "DHAKA",
+        "serviceImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7e4YPa--Yy6Alqel_wmCrPrPJ4kB8dNoIQ&s",
+        "serviceName": "DualShock 4 Analog Stick Repair",
+        "serviceDescription": "Fix your PS4 controller's drifting issues with our precision analog stick repair service. Accurate controls mean better gameplay and no more frustrating character movement.",
+        "servicePrice": "600 BDT"
+    }
+]

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header-font {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*  {
+   font-family: "Roboto", sans-serif;
+   font-optical-sizing: auto;
+}
+
+a.active {
+    text-decoration: underline;
+}
