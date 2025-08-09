@@ -2,18 +2,22 @@
 @plugin "daisyui";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 .header-font {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Edu NSW ACT Cursive", cursive;
     font-weight: 700;
     font-style: normal;
 }
 
 *  {
-   font-family: "Roboto", sans-serif;
-   font-optical-sizing: auto;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 a.active {
-    text-decoration: underline;
+    background-color: white;
+    color: rgba(0, 112, 204, 0.9)
 }

@@ -7,7 +7,9 @@ import { AuthContext } from "../Context/AuthContext";
 import Swal from "sweetalert2";
 import { FiSun } from "react-icons/fi";
 import { RiMenu2Fill } from "react-icons/ri";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosAddCircle, IoIosArrowForward } from "react-icons/io";
+import { MdManageHistory, MdOutlineAutoAwesomeMotion } from "react-icons/md";
+import { LuNotebookPen } from "react-icons/lu";
 
 function Navbar({theme, setTheme}) {
     const { user, logOut } = useContext(AuthContext);
@@ -36,8 +38,8 @@ function Navbar({theme, setTheme}) {
         setTheme(!theme);
     }
     return(
-        <div className="z-10 fixed top-0 w-full flex bg-[rgba(0,112,204,0.9)] h-[60px] pb-0.5 justify-between pr-7  shadow-sm">
-            <div className=" w-[150px]  lg:w-[300px] flex bg-white items-center rounded-r-full">
+        <div className="z-10 fixed top-0 w-full flex bg-linear-to-t from-[rgba(0,112,204,0.9)] to-indigo-500 h-[80px] pb-0.5 justify-between pr-7  shadow-sm">
+            <div className=" w-[150px]  lg:w-[300px] flex items-center rounded-r-full">
                 <div className="drawer w-fit lg:hidden">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
@@ -75,28 +77,28 @@ function Navbar({theme, setTheme}) {
                 <div className="w-16 ">
                     <img src={logo} className="w-full" alt="" />
                 </div>
-                <a className="text-2xl text-black hidden lg:block">PlayFix</a>
+                <a className="text-5xl text-white hidden lg:block header-font">PlayFix</a>
             </div>
             <div className="flex items-center gap-11"> 
                 <div className="w-[500px] justify-end   hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 flex space-x-7">
-                        <NavLink to ="/">Home</NavLink>
+                    <ul className=" px-1 flex space-x-7 ">
+                        <NavLink to ="/" className= "text-2xl border p-2 px-12 rounded-full">Home</NavLink>
                         {
                             user && <>
                                 <button className="flex justify-center items-center gap-2" popoverTarget="popover-1" style={{ anchorName: "--anchor-1" } /* as React.CSSProperties */}>
-                                    DashBoard <FaChevronDown />
+                                    <p className="text-2xl border p-2 px-12 rounded-full flex items-center gap-2.5">Dashboard<FaChevronDown /> </p> 
                                 </button>
 
-                                <ul className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm flex flex-col space-y-2"
+                                <ul className="dropdown menu w-60 rounded-b-2xl  shadow-sm flex flex-col space-y-2 absolute top-4 bg-[rgba(0,112,204,0.9)] "
                                     popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
-                                    <Link to="/add-service">Add Service</Link>
-                                    <Link to="/manage-service">Manage Service</Link>
-                                    <Link to="/booked-service">Booked Service</Link>
-                                    <Link to="/service-to-do">Service To Do</Link>
+                                    <Link to="/add-service" className="text-2xl flex items-center gap-3"><IoIosAddCircle size={30}/>Add Service</Link>
+                                    <Link to="/manage-service" className="text-2xl flex items-center gap-3"><MdManageHistory />Manage Service</Link>
+                                    <Link to="/booked-service" className="text-2xl flex items-center gap-3"><LuNotebookPen />Booked Service</Link>
+                                    <Link to="/service-to-do" className="text-2xl flex items-center gap-3"><MdOutlineAutoAwesomeMotion /> Service To Do</Link>
                                 </ul>
                             </>
                         }
-                        <NavLink to= "/services">Services</NavLink>
+                        <NavLink to="/services" className="text-2xl border p-2 px-12 rounded-full">Services</NavLink>
                     </ul>
                 </div>
                 <div className="flex justify-center items-center gap-4">
