@@ -6,6 +6,9 @@ import { TbCoinTakaFilled } from "react-icons/tb";
 import { CiLocationOn } from "react-icons/ci";
 import { CalendarDate, CalendarMonth } from "cally";
 import Swal from "sweetalert2";
+import bookings from "../lotties/booking.json"
+import Lottie from "lottie-react";
+import Loading from "../Components/loading";
 
 function Details() {
     const {id} = useParams();
@@ -29,13 +32,7 @@ function Details() {
         });
     }, [])
     if(!user || !data) {
-        return <div>
-            <div>Loading.....</div>
-            <div>Loading.....</div>
-            <div>Loading.....</div>
-            <div>Loading.....</div>
-            <div>Loading.....</div><div>Loading.....</div><div>Loading.....</div><div>Loading.....</div><div>Loading.....</div><div>Loading.....</div>
-        </div>
+        return <Loading></Loading>
     }
 
     const { _id, providerName,
@@ -102,16 +99,21 @@ function Details() {
     }
 
     return(
-        <div className="py-24 lg:w-[1000px] mx-auto">
-            <div className="card lg:card-side  bg-base-100 shadow-sm">
-                <figure>
+        <div className="py-24 lg:w-[1000px] mx-auto flex flex-col lg:flex-row justify-center items-center gap-6">
+            <div>
+                <Lottie style={{ width: "500px" }} animationData={bookings} loop={true} />
+            </div>
+            <div className="px-10 rounded-3xl py-5 shadow-sm bg-linear-to-t from-[#082c64] to-indigo-500 text-white">
+                <div className="mb-10">
                     <img
+                        className="rounded-3xl mx-auto"
                         src={serviceImage}
                         alt="Service Image" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">{serviceName}</h2>
-                    <p>{serviceDescription}</p>
+                </div>
+                <div className="divider"></div>
+                <div className="">
+                    <h2 className="card-title text-3xl header-font">{serviceName}</h2>
+                    <p className="my-3">{serviceDescription}</p>
                     <div className="flex gap-4">
                                             <div className="flex items-center">
                                                 <CiLocationOn size={24} /> {location}
@@ -121,7 +123,7 @@ function Details() {
                                                 <TbCoinTakaFilled size={24} /> {servicePrice}
                                             </div>
                                         </div>
-                    
+                    <div className="divider "></div>
                                         <div className="flex gap-2 mt-3">
                                             <div className="avatar">
                                                 <div className="ring-primary ring-offset-base-100 w-12 rounded-full ring-2 ring-offset-2">
@@ -134,7 +136,7 @@ function Details() {
                                             </div>
                                         </div>
                     <div className="card-actions justify-end">
-                        <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn btn-primary">Book Now</button>
+                        <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn bg-white px-14 rounded-4xl text-2xl">Book Now</button>
                         <dialog id="my_modal_2" className="modal">
                             <div className="modal-box">
                                 <form onSubmit={formHandler} className="fieldset bg-base-200 border-base-300 rounded-box border p-4 w-full ">
@@ -179,6 +181,7 @@ function Details() {
                                 </form>
 
                             </div>
+
                             <form method="dialog" className="modal-backdrop">
                                 <button>close</button>
                             </form>
