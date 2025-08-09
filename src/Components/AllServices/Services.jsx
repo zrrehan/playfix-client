@@ -21,7 +21,7 @@ function Services({dataPromise}) {
     return(
         <div className="pt-40">
             <div className="flex justify-center">
-                <label className="input mx-auto w-[90%] lg:w-[500px]">
+                <label className="input mx-auto w-[90%] lg:w-[500px] rounded-3xl">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
                             strokeLinejoin="round"

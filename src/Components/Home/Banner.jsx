@@ -14,6 +14,7 @@ function Banner() {
                 />
                 <motion.div
                     initial={{ y: 100 }} whileInView={{ y: 0, transition: { duration: 0.4 } }}
+                    className="bg-[#ffffff36] p-5 rounded-3xl"
                 >
                     <h1 className="text-5xl font-bold header-font">Your One-Stop PlayStation Service Hub in Bangladesh</h1>
                     <p className="py-6 ">
