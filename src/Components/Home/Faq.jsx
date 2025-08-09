@@ -9,7 +9,7 @@ function Faq() {
 
             <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-6">
                 <div className="join join-vertical bg-linear-to-t from-[#082c64] to-indigo-500 text-white rounded-4xl ">
-                    <div className="collapse collapse-arrow join-item border ">
+                    <div className="collapse collapse-arrow join-item  ">
                         <input type="radio" name="faq-accordion" defaultChecked />
                         <div className="collapse-title font-semibold">
                             How do I book a console repair service?
@@ -19,7 +19,7 @@ function Faq() {
                         </div>
                     </div>
 
-                    <div className="collapse collapse-arrow join-item border ">
+                    <div className="collapse collapse-arrow join-item  ">
                         <input type="radio" name="faq-accordion" />
                         <div className="collapse-title font-semibold">
                             Can I track the status of my booked service?
@@ -29,7 +29,7 @@ function Faq() {
                         </div>
                     </div>
 
-                    <div className="collapse collapse-arrow join-item border ">
+                    <div className="collapse collapse-arrow join-item  ">
                         <input type="radio" name="faq-accordion" />
                         <div className="collapse-title font-semibold">
                             I offer repair services. How do I add mine?
@@ -39,7 +39,7 @@ function Faq() {
                         </div>
                     </div>
 
-                    <div className="collapse collapse-arrow join-item border ">
+                    <div className="collapse collapse-arrow join-item  ">
                         <input type="radio" name="faq-accordion" />
                         <div className="collapse-title font-semibold">
                             Is PlayFix available in all cities?
@@ -49,7 +49,7 @@ function Faq() {
                         </div>
                     </div>
 
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item ">
                         <input type="radio" name="faq-accordion" />
                         <div className="collapse-title font-semibold">
                             Can I cancel a service after booking?

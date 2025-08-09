@@ -3,6 +3,8 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../Context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router";
+import Lottie from "lottie-react";
+import support from "../lotties/Support.json"
 
 function AddService() {
     const { user, logOut } = useContext(AuthContext);
@@ -78,6 +80,7 @@ function AddService() {
 
                 <button className="btn  bg-linear-to-t from-sky-500 to-indigo-500 text-white">Submit</button>
             </form>
+            <Lottie className="hidden md:flex" animationData={support} loop={true} />
         </div>
     )
 }

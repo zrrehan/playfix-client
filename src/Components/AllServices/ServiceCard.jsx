@@ -20,7 +20,7 @@ function ServiceCard({info}) {
                 className="card card-side  shadow-sm flex flex-col lg:flex-row lg:w-[1000px] border-2  mx-auto my-3 bg-linear-to-b from-[#082c64] to-indigo-500 text-white rounded-4xl">
                 <div className="lg:w-[500px] flex items-center justify-center border rounded-3xl m-2  border-blue-700">
                     <img
-                        className="w- h-full rounded-3xl"
+                        className="w-full h-full rounded-3xl object-cover object-left"
                         src= {serviceImage}
                         alt="Service Image" />
                 </div>

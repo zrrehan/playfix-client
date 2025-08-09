@@ -15,14 +15,14 @@ function Banner() {
                 />
                 <motion.div
                     initial={{ y: 100 }} whileInView={{ y: 0, transition: { duration: 0.4 } }}
-                    className="bg-[#ffffff36] p-5 rounded-3xl"
+                    className="bg-[#ffffff36] p-5 rounded-3xl "
                 >
-                    <h1 className="text-5xl font-bold header-font">Your One-Stop PlayStation Service Hub in Bangladesh</h1>
-                    <p className="py-6 ">
+                    <h1 className="text-5xl font-bold header-font text-blue-700">Your One-Stop PlayStation Service Hub in Bangladesh</h1>
+                    <p className="py-6 text-blue-700">
                         From repairs and upgrades to expert support — we’ve got your PlayStation covered. Fast, reliable, and gamer-approved services across Bangladesh.
                     </p>
                     <Link to = "/services">
-                        <button className="btn btn-primary text-3xl bg-blue-700 hover:bg-blue-900 px-24 py-6 rounded-full">Services</button>
+                        <button className="btn btn-primary text-3xl bg-linear-to-t from-[#082c64] to-indigo-500 px-24 py-6 rounded-full">Services</button>
                     </Link>
 
                 </motion.div>

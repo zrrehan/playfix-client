@@ -51,7 +51,7 @@ function ServiceToDoCard({info}) {
                         alt="Service Image" />
                 </div>
                 <div className="card-body">
-                    <h2 className="card-title text-2xl text-4xl header-font">{serviceName}</h2>
+                    <h2 className="card-title text-4xl header-font">{serviceName}</h2>
                     <p className="text-lg">
                         {
                             serviceDescription.length > 100 ? <p>{serviceDescription.slice(0, 100)}...</p>
