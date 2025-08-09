@@ -3,6 +3,8 @@ import Banner from "../Components/Home/Banner";
 import HomeService from "../Components/Home/HomeServices";
 import Diff from "../Components/Home/Diff";
 import Faq from "../Components/Home/Faq";
+import Timeline from "../Components/Home/Timeline";
+import SecondBanner from "../Components/Home/SecondBanner";
 
 const dataPromise = fetch("https://playfix-teal.vercel.app/").then((res) => res.json());
 
@@ -11,13 +13,15 @@ function Home() {
         document.querySelector("title").innerText = "Home"
     }, [])
     return(
-        <div>
+        <div className="space-y-[200px]">
             <Banner></Banner>
             <Suspense>
                 <HomeService dataPromise={dataPromise} ></HomeService>   
-            </Suspense>        
-            <Diff></Diff> 
+            </Suspense>    
+            <SecondBanner></SecondBanner>    
+            <Timeline></Timeline>
             <Faq></Faq>   
+            
         </div>
     )
 }

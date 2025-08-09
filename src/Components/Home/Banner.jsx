@@ -2,6 +2,7 @@ import { animate } from "motion";
 import hero from "../../assets/hero.png"
 import { motion } from "motion/react"
 import bg from "../../assets/psbg.png"
+import { Link } from "react-router";
 
 function Banner() {
     return(
@@ -20,7 +21,10 @@ function Banner() {
                     <p className="py-6 ">
                         From repairs and upgrades to expert support — we’ve got your PlayStation covered. Fast, reliable, and gamer-approved services across Bangladesh.
                     </p>
-                    <button className="btn btn-primary bg-blue-700 hover:bg-blue-900 px-14 rounded-3xl">Services</button>
+                    <Link to = "/services">
+                        <button className="btn btn-primary text-3xl bg-blue-700 hover:bg-blue-900 px-24 py-6 rounded-full">Services</button>
+                    </Link>
+
                 </motion.div>
             </div>
         </div>

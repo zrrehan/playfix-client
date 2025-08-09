@@ -60,7 +60,7 @@ function Faq() {
                     </div>
                 </div>
 
-                <Lottie style={{ width: "500px" }} animationData={faqAnimation} loop={true} />
+                <Lottie className="md:w-[500px]" animationData={faqAnimation} loop={true} />
             </div>
         </div>
     );
