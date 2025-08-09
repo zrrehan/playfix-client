@@ -5,6 +5,8 @@ import { TbCoinTakaFilled } from "react-icons/tb";
 import { AuthContext } from "../../Context/AuthContext";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
+import { GrUpdate } from "react-icons/gr";
+import { MdDeleteOutline } from "react-icons/md";
 
 function ManageServiceCard({info}) {
     const {user} = useContext(AuthContext);
@@ -98,13 +100,13 @@ function ManageServiceCard({info}) {
           });
     }
     return(
-        <div className="flex flex-col lg:flex-row space-x-8 my-7 bg-base-300 rounded-4xl  lg:w-[1000px] mx-auto p-5">
+        <div className="flex flex-col lg:flex-row space-x-8 my-7 bg-base-300 rounded-4xl  lg:w-[1000px] mx-auto p-5  shadow-sm  border-2   bg-linear-to-b from-[#082c64] to-indigo-500 text-white">
             <div className="w-[90%] lg:w-[400px] rounded-3xl border border-blue-700">
                 <img src={serviceImage}  className = "w-full rounded-3xl object-cover h-full" alt="" />
             </div>
 
             <div className="card-body">
-                <h2 className="card-title text-2xl">{serviceName}</h2>
+                <h2 className="card-title text-4xl header-font">{serviceName}</h2>
                 <p className="text-lg">
                     {
                         serviceDescription.length > 100 ? <p>{serviceDescription.slice(0, 100)}...</p>
@@ -113,18 +115,18 @@ function ManageServiceCard({info}) {
                 </p>
 
                 <div className="flex gap-4">
-                    <div className="flex items-center">
-                        <CiLocationOn size={24} /> {location}
+                    <div className="flex items-center gap-2">
+                        <CiLocationOn size={34} /> {location}
                     </div>
 
-                    <div className="flex items-center">
-                        <TbCoinTakaFilled size={24} /> {servicePrice}
+                    <div className="flex items-center gap-2">
+                        <TbCoinTakaFilled size={34} /> {servicePrice}
                     </div>
                 </div>
 
                 <div className="flex gap-2 mt-3">
-                    <div onClick={() => document.getElementById(`my_modal_${_id}`).showModal()} className="btn btn-accent px-12 rounded-3xl">Update</div>
-                    <div onClick={deleteFunctionality} className="btn btn-error px-12 rounded-3xl">Delete</div>
+                    <div onClick={() => document.getElementById(`my_modal_${_id}`).showModal()} className="btn px-12 rounded-3xl flex items-center gap-2"><GrUpdate />Update</div>
+                    <div onClick={deleteFunctionality} className="btn  px-12 rounded-3xl flex items-center gap-2"><MdDeleteOutline />Delete</div>
                 </div>
 
                 <dialog id={`my_modal_${_id}`} className="modal">

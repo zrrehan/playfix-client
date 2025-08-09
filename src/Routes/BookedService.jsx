@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import { Suspense } from "react";
 import AllBookedService from "../Components/BookedService/AllBookedService";
+import Loading from "../Components/loading";
 
 function BookedService() {
     const {user} = useContext(AuthContext);
@@ -18,7 +19,7 @@ function BookedService() {
 
     return(
         <div className="h-[100vh]">
-            <Suspense fallback={<div className="flex justify-center py-20"><span className="loading loading-spinner loading-xl"></span></div>}>
+            <Suspense fallback={<Loading></Loading>}>
                 <AllBookedService dataPromise={dataPromise} ></AllBookedService>
             </Suspense>
         </div>

@@ -1,5 +1,7 @@
 import { use } from "react";
 import ServiceToDoCard from "./serviceToDoCard";
+import nodata from "../../lotties/no_search.json"
+import Lottie from "lottie-react";
 
 function ServiceToDoAllCard({dataPromise}) {
     const data = use(dataPromise);
@@ -13,7 +15,10 @@ function ServiceToDoAllCard({dataPromise}) {
                     }
                 </div>
                     : <div className="">
-                        <h1 className="text-2xl font-bold text-center">None Booked your Services yet!</h1>
+                        <h1 className="text-5xl font-bold text-center text-blue-700">None Booked your Services yet!</h1>
+                        <div className="flex justify-center">
+                            <Lottie style={{ width: "500px" }} animationData={nodata} loop={true} />
+                        </div>
                     </div>
             }
         </div>

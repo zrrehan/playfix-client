@@ -1,5 +1,6 @@
 import { Suspense, useEffect } from "react";
 import Services from "../Components/AllServices/Services";
+import Loading from "../Components/loading";
 
 function AllServices() {
     const dataPromise = fetch("https://playfix-teal.vercel.app/").then((res) => res.json());
@@ -9,7 +10,7 @@ function AllServices() {
     return(
         <div>
             
-            <Suspense fallback={<div className="flex justify-center py-20"><span className="loading loading-spinner loading-xl"></span></div>}>
+            <Suspense fallback={<Loading></Loading>}>
                 <Services dataPromise={dataPromise}></Services>
             </Suspense>
         </div>

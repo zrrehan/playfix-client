@@ -18,7 +18,7 @@ function BookedServiceCard({info}) {
 
             <motion.div
                 initial={{ scale: 0.2 }} whileInView={{ scale: 1 }}
-                className="card card-side flex flex-col lg:flex-row bg-base-100 shadow-sm lg:w-[1000px] border-2 border-blue-700 mx-auto my-3">
+                className="card card-side  shadow-sm flex flex-col lg:flex-row lg:w-[1000px] border-2  mx-auto my-3 bg-linear-to-b from-[#082c64] to-indigo-500 text-white rounded-4xl">
                 <div className="lg:w-[500px] flex items-center justify-center border rounded-3xl m-2  border-blue-700">
                     <img
                         className="w-full h-full rounded-3xl"
@@ -35,16 +35,16 @@ function BookedServiceCard({info}) {
                     </p>
 
                     <div className="flex gap-4">
-                        <div className="flex items-center">
-                            <CiLocationOn size={24} /> {location}
+                        <div className="flex items-center gap-2">
+                            <CiLocationOn size={34} /> {location}
                         </div>
 
-                        <div className="flex items-center">
-                            <TbCoinTakaFilled size={24} /> {servicePrice}
+                        <div className="flex items-center gap-2">
+                            <TbCoinTakaFilled size={34} /> {servicePrice}
                         </div>
 
-                        <div className="flex items-center gap-1">
-                            <IoSettings size={24} /> {serviceStatus}
+                        <div className="flex items-center gap-2">
+                            <IoSettings size={34} /> {serviceStatus}
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@ import axios from "axios";
 import { Suspense, useContext, useEffect } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import SingleManageService from "../Components/ManageService/SingleManageService";
+import Loading from "../Components/loading";
 // import { Suspense } from "react";
 
 function ManageService() {
@@ -22,7 +23,7 @@ function ManageService() {
     
     return(
         <div className="h-[100vh]">
-            <Suspense fallback={<div className="flex justify-center py-20"><span className="loading loading-spinner loading-xl"></span></div>}>
+            <Suspense fallback={<Loading></Loading>}>
                 <SingleManageService dataPromise={dataPromise}></SingleManageService>
             </Suspense>
         </div>

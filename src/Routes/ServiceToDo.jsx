@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { Suspense } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import ServiceToDoAllCard from "../Components/ServiceToDo/ServiceToDoAllCard";
+import Loading from "../Components/loading";
 
 function ServiceToDo() {
     const {user} = useContext(AuthContext);
@@ -17,7 +18,7 @@ function ServiceToDo() {
             .then(res => res.json());
     return(
         <div className="h-[100vh]">
-            <Suspense fallback={<div className="flex justify-center py-20"><span className="loading loading-spinner loading-xl"></span></div>}>
+            <Suspense fallback={<Loading></Loading>}>
                 <ServiceToDoAllCard dataPromise={dataPromise}></ServiceToDoAllCard>
             </Suspense>
         </div>
