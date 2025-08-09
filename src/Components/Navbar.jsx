@@ -38,7 +38,7 @@ function Navbar({theme, setTheme}) {
         setTheme(!theme);
     }
     return(
-        <div className="z-10 fixed top-0 w-full flex bg-linear-to-t from-[rgba(0,112,204,0.9)] to-indigo-500 h-[80px] pb-0.5 justify-between pr-7  shadow-sm">
+        <div className="z-10  w-full flex bg-linear-to-t from-[#082c64] to-indigo-500 h-[80px] pb-0.5 justify-between px-7 ">
             <div className=" w-[150px]  lg:w-[300px] flex items-center rounded-r-full">
                 <div className="drawer w-fit lg:hidden">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -89,7 +89,7 @@ function Navbar({theme, setTheme}) {
                                     <p className="text-2xl border p-2 px-12 rounded-full flex items-center gap-2.5">Dashboard<FaChevronDown /> </p> 
                                 </button>
 
-                                <ul className="dropdown menu w-60 rounded-b-2xl  shadow-sm flex flex-col space-y-2 absolute top-4 bg-[rgba(0,112,204,0.9)] "
+                                <ul className="dropdown menu w-60 rounded-b-2xl  shadow-sm flex flex-col space-y-2 absolute top-4 bg-[#082c64] "
                                     popover="auto" id="popover-1" style={{ positionAnchor: "--anchor-1" } /* as React.CSSProperties */}>
                                     <Link to="/add-service" className="text-2xl flex items-center gap-3"><IoIosAddCircle size={30}/>Add Service</Link>
                                     <Link to="/manage-service" className="text-2xl flex items-center gap-3"><MdManageHistory />Manage Service</Link>

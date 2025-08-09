@@ -1,14 +1,15 @@
 import { animate } from "motion";
 import hero from "../../assets/hero.png"
 import { motion } from "motion/react"
+import bg from "../../assets/psbg.png"
 
 function Banner() {
     return(
-        <div className="hero bg-base-200 min-h-screen py-56">
+        <div style={{ backgroundImage: `url(${bg})` }} className={`hero min-h-screen py-56 bg-cover bg-right text-white}`}>
             <div className="hero-content flex-col lg:flex-row">
                 <motion.img
                     initial={{ scale: 0 }} whileInView={{ scale: 1, transition: { duration: 1 } } }
-                    className=" border-b-10 rounded-bl-2xl border-blue-600"
+                    className=" border-b-10 rounded-bl-2xl border-white"
                     src = {hero}
                 />
                 <motion.div
