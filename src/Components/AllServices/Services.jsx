@@ -1,6 +1,9 @@
 import { use } from "react"
 import ServiceCard from "./ServiceCard";
 import { useState } from "react";
+import nodata from "../../lotties/no_search.json"
+import search from "../../lotties/search.json"
+import Lottie from "lottie-react";
 
 function Services({dataPromise}) {
     const data = use(dataPromise);
@@ -22,23 +25,16 @@ function Services({dataPromise}) {
         <div className="pt-40">
             <div className="flex justify-center">
                 <label className="input mx-auto w-[90%] lg:w-[500px] rounded-3xl">
-                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g
-                            strokeLinejoin="round"
-                            strokeLinecap="round"
-                            strokeWidth="2.5"
-                            fill="none"
-                            stroke="currentColor"
-                        >
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.3-4.3"></path>
-                        </g>
-                    </svg>
+                    
+                    <Lottie style={{ width: "50px" }}  animationData={search} loop={true} />
+                    
                     <input onChange={searchHandler} type="search" required placeholder="Search" />
                 </label>
             </div>
             {
-                searchData.map(dataInfo => <ServiceCard info = {dataInfo}></ServiceCard>)
+                searchData.length !== 0 ? searchData.map(dataInfo => <ServiceCard info={dataInfo}></ServiceCard>) : <div className="flex justify-center">
+                    <Lottie style={{ width: "500px" }} animationData={nodata} loop={true} />
+                </div>
             }
         </div>
     )
