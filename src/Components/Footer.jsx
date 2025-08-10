@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 function Footer() {
     return(
         <div>
-            <footer className="footer sm:footer-horizontal p-10 bg-linear-to-t from-[#082c64] to-indigo-500 text-white ">
+            <footer className="footer sm:footer-horizontal  p-10 bg-linear-to-t from-[#082c64] to-indigo-500 text-white ">
                 <aside>
                     <div>
                         <img className="w-14" src={logo} alt="logo" />

@@ -78,7 +78,7 @@ function AddService() {
                     <textarea className="textarea h-24" placeholder="Describe your Service" name= "serviceDescription"></textarea>
                 </fieldset>
 
-                <button className="btn  bg-linear-to-t from-sky-500 to-indigo-500 text-white">Submit</button>
+                <button className="btn btn-primary bg-linear-to-t from-[#082c64] to-indigo-500 px-24 hover:bg-blue-900 py-3 text-xl rounded-3xl">Submit</button>
             </form>
             <Lottie className="hidden md:flex" animationData={support} loop={true} />
         </div>

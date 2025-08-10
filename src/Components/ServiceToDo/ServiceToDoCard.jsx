@@ -40,7 +40,6 @@ function ServiceToDoCard({info}) {
     }
     return(
         <div>
-
             <motion.div
                 initial={{ scale: 0.2 }} whileInView={{ scale: 1 }}
                 className="card card-side  shadow-sm flex flex-col lg:flex-row lg:w-[1000px] border-2  mx-auto my-3 bg-linear-to-b from-[#082c64] to-indigo-500 text-white rounded-4xl">

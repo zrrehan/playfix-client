@@ -40,11 +40,11 @@ function Navbar({theme, setTheme}) {
     return(
         <div className="z-10  w-full flex bg-linear-to-t from-[#082c64] to-indigo-500 h-[80px] pb-0.5 justify-between px-7 ">
             <div className=" w-[150px]  lg:w-[300px] flex items-center rounded-r-full">
-                <div className="drawer w-fit lg:hidden">
+                <div className="drawer w-fit xl:hidden">
                     <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
                         {/* Page content here */}
-                        <label htmlFor="my-drawer" className="btn drawer-button" data-theme = "light">
+                        <label htmlFor="my-drawer" className="text-white text-3xl hover:cursor-pointer" data-theme = "light">
                             <RiMenu2Fill />
                         </label>
                     </div>
@@ -77,10 +77,10 @@ function Navbar({theme, setTheme}) {
                 <div className="w-16 ">
                     <img src={logo} className="w-full" alt="" />
                 </div>
-                <a className="text-5xl text-white hidden lg:block header-font">PlayFix</a>
+                <a className="text-5xl text-white hidden xl:block header-font">PlayFix</a>
             </div>
             <div className="flex items-center gap-11"> 
-                <div className="w-[500px] justify-end   hidden lg:flex">
+                <div className="w-[500px] justify-end   hidden xl:flex">
                     <ul className=" px-1 flex space-x-7 ">
                         <NavLink to ="/" className= "text-2xl border p-2 px-12 rounded-full">Home</NavLink>
                         {

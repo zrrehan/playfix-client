@@ -1,5 +1,5 @@
 import { use } from "react";
-import ServiceToDoCard from "./serviceToDoCard";
+import ServiceToDoCard from "./serviceToDoCard.jsx";
 import nodata from "../../lotties/no_search.json"
 import Lottie from "lottie-react";
 
@@ -7,7 +7,7 @@ function ServiceToDoAllCard({dataPromise}) {
     const data = use(dataPromise);
     console.log(data);
     return(
-        <div className="py-34 h-[100vh]">
+        <div className="py-15 min-h-[100vh]">
             {
                 data.length > 0 ? <div>
                     {
